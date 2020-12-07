@@ -71,6 +71,7 @@
             </div>
             <br>
             <div style="text-align: center; font-size: 20px;">Please enter dimensions:</div>
+            <div id="unitInputArea">
             <!-- Numeric Textfield with Floating Label -->
             <form action="#">
                 <div id="widthArea" style="width: 150px; margin: auto;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -78,7 +79,7 @@
                     <label class="mdl-textfield__label" for="widthInput">Width</label>
                     <span class="mdl-textfield__error">Input is not a number!</span>
                 </div>
-                <span id="unitDisplay1" style="font-size: 18px;">hi</span>
+                <span id="unitDisplay1" style="font-size: 18px;"></span>
             </form>
             <!-- Numeric Textfield with Floating Label -->
             <form action="#">
@@ -87,8 +88,9 @@
                     <label class="mdl-textfield__label" for="heightInput">Height</label>
                     <span class="mdl-textfield__error">Input is not a number!</span>
                 </div>
-                <span id="unitDisplay2" style = "font-size: 18px;">hi</span>
+                <span id="unitDisplay2" style = "font-size: 18px;"></span>
             </form>
+            </div>
         </td>
 
         <td>
@@ -109,7 +111,8 @@
     </table>
 </div>
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="orderButton">Send Order
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="orderButton"
+        onclick="sendOrder()">Send Order
 </button>
 
 <a href="customerMainPage.html">
