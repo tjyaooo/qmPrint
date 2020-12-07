@@ -31,7 +31,7 @@ function selectUnit(selectedUnit)
     {
         selectedUnit = "Feet and Inches"
         getRef("unitInputArea").innerHTML =
-            '<div style="font-size: 18px;">Width:</div>' +
+            '<div style="font-size: 18px; text-align: center;">Width:</div>' +
             '<form action="#"><div id="widthArea" style="width: 100px; margin: auto;"' +
              'class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input"' +
               'type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="widthInput1"><label class="mdl-textfield__label"' +
@@ -88,6 +88,8 @@ function selectUnit(selectedUnit)
       }
     }
 
+    componentHandler.upgradeDom();
+
 }
 
 function sendOrder(){
@@ -112,12 +114,14 @@ function sendOrder(){
 
 function addOrder(thicknessIn, quanIn, widthIn, heightIn)
 {
+    let myfileUpload = source("myfile");
     // Make a new user object
     let orderData = {
         thickness: thicknessIn,
         quantity: quanIn,
         width: widthIn,
-        height: heightIn
+        height: heightIn,
+        file: myfileUpload
     };
 
     // Add it to the users branch in firebase
@@ -138,3 +142,5 @@ window.addEventListener("click", function(event) {
     }
   }
 });
+
+
