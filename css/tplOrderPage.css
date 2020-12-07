@@ -1,31 +1,27 @@
+
 body{
-    padding: 1 em;
     font-family: Times New Roman;
     background: #663366;
-    margin-top:2%
+    text-align: center;
 }
 
-#orderButton {
+#fileUpload{
+    background: #FFBF00;
+    color: red;
+    width: 95%;
+    margin-left: auto; margin-right: auto;
+}
+#orderButton, #cancelButton {
     position: relative;
-    top: 1em;
+    top: 2em;
     left: 1em;
     background-color: white;
 }
 
-#cancelButton {
-    position: relative;
-    top: 1em;
-    left: 1em;
-    background-color: white;
-}
 
-#tplImage{
-    position: absolute;
-    height: 30%;
-    width: 34%;
-    align: right;
-    top: 5%;
-    right: 20%;
+#tableId{
+    width: 95%;
+    margin-left:auto; margin-right:auto;
 }
 
 /* Dropdown Button */
@@ -87,11 +83,10 @@ body{
 }
 
 #logoutId{
-    position: relative;
+    position: absolute;
     margin-top: 3em;
     margin-bottom: 1em;
-    bottom: 0 em;
-    right: 0em;
+    right: 3em;
     width: 150px;
     height: 75px;
     font-size: 20px;

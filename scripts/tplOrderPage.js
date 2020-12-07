@@ -116,6 +116,7 @@ function sendOrder(){
     storageRef.put(file);
 
     addOrder(thickness, quan, width, height);
+
 }
 
 function addOrder(thicknessIn, quanIn, widthIn, heightIn)
@@ -131,6 +132,10 @@ function addOrder(thicknessIn, quanIn, widthIn, heightIn)
 
     // Add it to the users branch in firebase
     addToBranch("orders", orderData)
+
+    getRef("orderContent").innerHTML =
+                        '<div style="font-size: 50px; color=white; margin-top: 4em;">Your Order Has been Submitted! Thank You!</div>'
+                        + '<br>' + '<div style="font-size: 50px; color=white;">Reload to Submit Another Order.</div>'
 }
 
 // Close the dropdown menu if the user clicks outside of it

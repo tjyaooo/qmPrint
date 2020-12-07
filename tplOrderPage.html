@@ -20,20 +20,21 @@
 
 <body onload="verifyPermission()">
 
+<div id="orderContent">
 <h2 style="padding-left: 1%; color: white;">Tarpauline</h2>
-<span><img src='images/bannerMockup.jpg' id="tplImage"/></span>
-
 <div id="fileUpload">
-    <h1 style="font-size: 20px; padding-left: 1%; color: white;">Please Upload Your AI Design File</h1>
-    <h1 style="font-size: 20px; padding-left: 1%; color: white;">Indicate dimensions in file name for a better
+    <h1 style="font-size: 20px; padding-left: 1%; color: blue;">Please Upload Your AI Design File</h1>
+    <h1 style="font-size: 20px; padding-left: 1%; color: black;">Indicate dimensions in file name for a better
         experience</h1>
-    <form action="/action_page.php" style="padding-left: 1%; color: white;">
+    <form action="/action_page.php" style="padding-left: 1%; color: black;">
         <input type="file" id="myfile" value="upload"><br><br>
     </form>
+</div>
     <br>
 
+<div>
     <h2 style="padding-left: 1%; color: white;">Order Details</h2>
-    <table class="mdl-data-table mdl-js-data-table expand_width">
+    <table id= "tableId" class="mdl-data-table mdl-js-data-table expand_width">
         <thead>
         <tr>
             <th class="mdl-data-table__cell--non-numeric" style="font-size: 25px; text-align: center;">TPL Thickness
@@ -90,10 +91,6 @@
                 </div>
             </form>
         </td>
-
-
-        <tbody id="tableBody1">
-        </tbody>
     </table>
 </div>
 
@@ -106,6 +103,8 @@
     Cancel Order
 </button>
 </a>
+
+</div>
 
 <button id="logoutId" onclick="logOut();">Log Out</button>
 
