@@ -109,19 +109,24 @@ function sendOrder(){
         height = source('heightInput') + " " + units;
     }
 
+    let fileButton = getRef("myfile");
+    let file = fileButton.files[0];
+    let user = JSON.parse(localStorage.getItem(USER_KEY)).username;
+    var storageRef = firebase.storage().ref(user +'/' + file.name);
+    storageRef.put(file);
+
     addOrder(thickness, quan, width, height);
 }
 
 function addOrder(thicknessIn, quanIn, widthIn, heightIn)
 {
-    let myfileUpload = source("myfile");
-    // Make a new user object
+
+    // Make a new order object
     let orderData = {
         thickness: thicknessIn,
         quantity: quanIn,
         width: widthIn,
         height: heightIn,
-        file: myfileUpload
     };
 
     // Add it to the users branch in firebase
@@ -142,5 +147,3 @@ window.addEventListener("click", function(event) {
     }
   }
 });
-
-

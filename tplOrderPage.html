@@ -28,7 +28,7 @@
     <h1 style="font-size: 20px; padding-left: 1%; color: white;">Indicate dimensions in file name for a better
         experience</h1>
     <form action="/action_page.php" style="padding-left: 1%; color: white;">
-        <input type="file" id="myfile" name="myfile" multiple><br><br>
+        <input type="file" id="myfile" value="upload"><br><br>
     </form>
     <br>
 
@@ -107,11 +107,7 @@
 </button>
 </a>
 
-
-<button id="submit" onclick="logOut();"
-        style="position: absolute; right:30px; bottom:30px; width: 150px; height: 75px; font-size: larger;">
-    Log Out
-</button>
+<button id="logoutId" onclick="logOut();">Log Out</button>
 
 
 <!--firebase-->
@@ -119,7 +115,9 @@
 <script src="/__/firebase/7.18.0/firebase-app.js"></script>
 <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
 <script src="/__/firebase/7.18.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-storage.js"></script>
 <script src="/__/firebase/init.js"></script>
+
 
 <!--other scripts-->
 <script src="scripts/generalFunctions.js"></script>

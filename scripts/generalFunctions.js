@@ -93,21 +93,12 @@ function showLoggedInUser() {
  */
 function verifyPermission() {
     let user = JSON.parse(localStorage.getItem(USER_KEY));
-    if (user) {
-        if (ACCESSIBLE_PAGES[user.permission].includes(window.location)) {
-            // Should be denied access
-            document
-                .getElementsByTagName("body")[0]
-                .innerText = "Access denied";
-        }
-    } else {
+    if (user == "")
+    {
         // Should be denied access
-        document
-            .getElementsByTagName("body")[0]
-            .innerText = "Access denied";
+        document.getElementsByTagName("body")[0].innerText = "Access denied";
     }
 }
-
 /**
  * Appends a value to a branch in firebase.
  *

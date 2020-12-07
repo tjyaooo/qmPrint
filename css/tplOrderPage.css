@@ -7,15 +7,15 @@ body{
 
 #orderButton {
     position: relative;
-    top: 20px;
-    left: 10px;
+    top: 1em;
+    left: 1em;
     background-color: white;
 }
 
 #cancelButton {
     position: relative;
-    top: 20px;
-    left: 10px;
+    top: 1em;
+    left: 1em;
     background-color: white;
 }
 
@@ -84,4 +84,15 @@ body{
 
 .mdl-textfield__input {
     text-align: center;
+}
+
+#logoutId{
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    bottom: 0 em;
+    right: 0em;
+    width: 150px;
+    height: 75px;
+    font-size: 20px;
 }
