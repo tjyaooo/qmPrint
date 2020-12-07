@@ -112,7 +112,8 @@ function sendOrder(){
     let fileButton = getRef("myfile");
     let file = fileButton.files[0];
     let user = JSON.parse(localStorage.getItem(USER_KEY)).username;
-    var storageRef = firebase.storage().ref(user +'/' + file.name);
+    let date = (new Date()).toISOString().split('T')[0];
+    var storageRef = firebase.storage().ref(user + "(" + date + + ")" + '/' + file.name);
     storageRef.put(file);
 
     addOrder(thickness, quan, width, height);
@@ -136,6 +137,9 @@ function addOrder(thicknessIn, quanIn, widthIn, heightIn)
     getRef("orderContent").innerHTML =
                         '<div style="font-size: 50px; color=white; margin-top: 4em;">Your Order Has been Submitted! Thank You!</div>'
                         + '<br>' + '<div style="font-size: 50px; color=white;">Reload to Submit Another Order.</div>'
+                        + '<a href="customerMainPage.html">' +
+                          '<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="cancelButton" onclick="showRequests()">'
+                        +  'Return to Main Page </button> </a>'
 }
 
 // Close the dropdown menu if the user clicks outside of it
