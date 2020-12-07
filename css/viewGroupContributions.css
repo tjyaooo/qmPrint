@@ -1,0 +1,16 @@
+#studentCardContainer{
+    display:inline-block;
+    margin-top: 5vw;
+    margin-left: 3vw;
+    width: 50vw;
+    height: 40vw;
+    background-color: #444444;
+
+}
+
+#pieChartContainer{
+    display:inline-block;
+    width: 30vw;
+    height: 40vw;
+    background-color: #FFCA28;
+}

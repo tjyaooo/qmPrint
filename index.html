@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--link stylesheet-->
+    <link href="css/main.css" rel="stylesheet"/>
+    <!---Logo-->
+    <link href="images/logo.jfif" rel="icon">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<h1 id="title"> QM Print Sdn. Bhd.</h1>
+<h1 id="description">Printing Made Easy.</h1>
+<div class="loginArea">
+    <i class="fa fa-lock" aria-hidden="true" style="font-size:60px;"></i>
+    <h2>User Login</h2>
+
+
+    <input id="usernameId" placeholder="username" type="text"></input>
+    <input id="passwordId" placeholder="password" type="password"></input>
+    <div>
+        <button id="loginButton" onclick="login();">Login</button>
+
+        <a href="register.html">
+            <button id="registerButton">Register</button>
+        </a>
+
+    </div>
+    <div id="error" style="color: red"></div>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.1/firebase-app.js"></script>
+<script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
+<script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+<script src="/__/firebase/7.18.0/firebase-database.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<!-- Logic -->
+<script src="scripts/generalFunctions.js"></script>
+<script src="scripts/index.js"></script>
+
+</body>
+
+</html>

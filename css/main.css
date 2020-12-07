@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Times New Roman;
+    background: #C0C0C0;
+
+}
+
+#title{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 5%
+}
+
+#description{
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.loginArea{
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+#usernameId, #passwordId {
+    background: none;
+    border:0;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 70%;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+    transition: 0.25s;
+}
+
+#usernameId:focus, #passwordId:focus{
+    width: 75%;
+}
+
+::placeholder{
+    color: black;
+    opacity: 80%
+}
+
+#loginButton, #registerButton{
+    margin: 15px;
+    background: none;
+    border: 2px solid #2980b9;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: black;
+    transition: 0.25s;
+}
+
+#loginButton:hover, #registerButton:hover{
+    background: #E0FFFF;
+}
+
+
+
+

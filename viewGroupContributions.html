@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<!--MDL links-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> <!--Script for canvasjs-->
+<script>
+</script>
+<link href="css/viewGroupContributions.css" rel="stylesheet">
+<!--Go to css and remove the BG colors, i just wanna show u my div box layout
+then paste this back into the onload below once u done >> verifyPermission() -->
+<body style="background-color:	#006cab;" onload="fetchGroupObject(); ">
+
+<h5 class="parent" id="userDisplay">Logged in as:
+    <!--username display goes here-->
+</h5>
+
+<div id="units" class="parent"></div>
+
+<!--Invisible Div box to hold everything in the center-->
+<div id="mainDiv">
+    <!--Div for studentCards-->
+    <div id="studentCardContainer"></div>
+        <!--studentcards generate here (MDL cards)-->
+    <!--PieChart div (sidebyside with studentCards)-->
+
+    <div id="pieChartContainer"></div>
+
+</div>
+
+
+
+<button id="submit" onclick="logOut();" style="position: absolute; right:30px; bottom:30px; width: 150px; height: 75px; font-size: larger;">
+    Log Out
+</button>
+
+
+<!--firebase-->
+
+<script src="/__/firebase/7.18.0/firebase-app.js"></script>
+<script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+<script src="/__/firebase/7.18.0/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+
+<!--other scripts-->
+<script src="scripts/library.js"></script>
+<script src="scripts/viewGroupContributions.js"></script>
+</body>
+
+</html>

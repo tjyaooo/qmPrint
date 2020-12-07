@@ -1,0 +1,43 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    border-width: 5em;
+    border-color: black;
+    margin: 1em;
+    width: 90vw;
+    box-sizing: border-box;
+}
+
+.vertical-align {
+    display: inline;
+    overflow: auto;
+    padding: 1em;
+}
+
+.white-font {
+    color: white;
+}
+
+.title-with-overlay {
+    min-height: 18vh;
+    min-width: 14vw;
+    color: white;
+    /* MDL Blue */
+    background: rgb(63, 81, 181);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#stats {
+    width: 40vw;
+    height: 45vw;
+    overflow: hidden;
+}
+
+#page-title{
+    width: 110%;
+    text-align: center;
+}

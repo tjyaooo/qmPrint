@@ -1,0 +1,62 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    margin: 1em;
+    width: 90vw;
+    box-sizing: border-box;
+}
+
+.vertical-align {
+    display: block;
+    overflow: auto;
+    padding: 1em;
+}
+
+
+#userDisplay {
+    float: right;
+    margin: 1em;
+    color: white;
+}
+
+#modalBox {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    text-align: center;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+#modalContent {
+    text-align: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<!--MDL links-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link href="css/tplOrderPage.css" rel="stylesheet">
+<style>
+    .expand_width {
+        width: 80%;
+    }
+
+</style>
+
+<body onload="verifyPermission()">
+
+<h2 style="padding-left: 1%; color: white;">Tarpauline</h2>
+<span><img src='images/bannerMockup.jpg' id="tplImage"/></span>
+
+<div id="fileUpload">
+    <h1 style="font-size: 20px; padding-left: 1%; color: white;">Please Upload Your AI Design File</h1>
+    <h1 style="font-size: 20px; padding-left: 1%; color: white;">Indicate dimensions in file name for a better
+        experience</h1>
+    <form action="/action_page.php" style="padding-left: 1%; color: white;">
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+    </form>
+    <br>
+
+    <h2 style="padding-left: 1%; color: white;">Order Details</h2>
+    <table class="mdl-data-table mdl-js-data-table expand_width">
+        <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric" style="font-size: 25px; text-align: center;">TPL Thickness
+            </th>
+            <th class="mdl-data-table__cell--non-numeric" style="font-size: 25px; text-align: center;">Dimensions</th>
+            <th class="mdl-data-table__cell--non-numeric" style="font-size: 25px; text-align: center;">Quantity</th>
+        </tr>
+        </thead>
+
+        <td>
+            <span style="text-align: center; font-size: 20px;"> Please Specify Tarpaulin Thickness desired!</span>
+            <br><br>
+            <div style="text-align: center; font-size: 20px;">Selected Thickness:</div>
+            <div style="text-align: center; font-size: 20px;" id="selectedThicknessId"></div>
+            <br>
+            <div class="thicknessDropdown" style="text-align: center; font-size: 20px;">
+                <button onclick="thicknessOptions()" class="thicknessDropbtn">CLICK TO SELECT THICKNESS</button>
+                <div style="text-align: center; font-size: 20px;" id="myThicknessDropdown" class="dropdown-content">
+                    <button onclick="selectThickness(300)">300 g/sm</button>
+                    <button onclick="selectThickness(400)">400 g/sm</button>
+                    <button onclick="selectThickness(440)">440 g/sm</button>
+                </div>
+            </div>
+        </td>
+
+        <td>
+            <span style="text-align: center; font-size: 18px;"> Please Specify Printing Dimensions!</span>
+            <br><br>
+            <div style="text-align: center; font-size: 20px;">Selected Unit:</div>
+            <div style="text-align: center; font-size: 20px;" id="selectedUnitId"></div>
+            <br>
+            <div class="unitDropdown" style="text-align: center; font-size: 20px;">
+                <button onclick="unitOptions()" class="unitDropbtn">CLICK TO SELECT UNITS</button>
+                <div style="text-align: center; font-size: 20px;" id="myUnitDropdown" class="dropdown-content">
+                    <button onclick="selectUnit('millimetres')">millimetres (mm)</button>
+                    <button onclick="selectUnit('centimetres')">centimetres (cm)</button>
+                    <button onclick="selectUnit('metres')">metres (m)</button>
+                    <button onclick="selectUnit('feetAndInches')">feet and inches</button>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center; font-size: 20px;">Please enter dimensions:</div>
+            <!-- Numeric Textfield with Floating Label -->
+            <form action="#">
+                <div id="widthArea" style="width: 150px; margin: auto;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="widthInput">
+                    <label class="mdl-textfield__label" for="widthInput">Width</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <span id="unitDisplay1" style="font-size: 18px;">hi</span>
+            </form>
+            <!-- Numeric Textfield with Floating Label -->
+            <form action="#">
+                <div style="width: 150px;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="heightInput">
+                    <label class="mdl-textfield__label" for="heightInput">Height</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <span id="unitDisplay2" style = "font-size: 18px;">hi</span>
+            </form>
+        </td>
+
+        <td>
+            <span style="display:table; margin:0 auto; font-size: 18px;"> Quantity</span>
+            <!-- Numeric Textfield -->
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="quantity">
+                    <label class="mdl-textfield__label" for="quantity">Number of Copies</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+            </form>
+        </td>
+
+
+        <tbody id="tableBody1">
+        </tbody>
+    </table>
+</div>
+
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="orderButton">Send Order
+</button>
+
+<a href="customerMainPage.html">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="cancelButton" onclick="showRequests()">
+    Cancel Order
+</button>
+</a>
+
+
+<button id="submit" onclick="logOut();"
+        style="position: absolute; right:30px; bottom:30px; width: 150px; height: 75px; font-size: larger;">
+    Log Out
+</button>
+
+
+<!--firebase-->
+
+<script src="/__/firebase/7.18.0/firebase-app.js"></script>
+<script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+<script src="/__/firebase/7.18.0/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<!--other scripts-->
+<script src="scripts/generalFunctions.js"></script>
+<script src="scripts/tplOrderPage.js"></script>
+
+</body>
+
+
+</html>

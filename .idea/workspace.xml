@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hQiEtLZsvywBPz6FsboisnPKrA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\sample" />
+      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="" />
+      <created>1599949607301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599949607301</updated>
+      <workItem from="1599949608334" duration="7736000" />
+      <workItem from="1599957361158" duration="5023000" />
+      <workItem from="1599962965199" duration="412000" />
+      <workItem from="1599964004805" duration="3902000" />
+      <workItem from="1599981036771" duration="1409000" />
+      <workItem from="1600092572384" duration="20153000" />
+      <workItem from="1600112756388" duration="9306000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add spike code for testing database.">
+      <created>1600102423331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600102423331</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add docs to spike code.">
+      <created>1600102541120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600102541120</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix login not working when there are no accounts.&#10;Change account search method to more efficient one.">
+      <created>1600105724801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600105724801</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change buttons to use anchor for redirecting.">
+      <created>1600106292328</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600106292328</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix login/register not interacting with database correctly.">
+      <created>1600110016411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600110016411</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Redesign table of groups and cleanup code.">
+      <created>1600116047696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600116047696</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Clean up code and replace algorithms with more efficient ones.">
+      <created>1600120166585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600120166585</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Enchance validation checking and group adding algorithm.">
+      <created>1600121848604</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600121848604</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add spike code for testing database." />
+    <MESSAGE value="Add docs to spike code." />
+    <MESSAGE value="Fix login not working when there are no accounts.&#10;Change account search method to more efficient one." />
+    <MESSAGE value="Change buttons to use anchor for redirecting." />
+    <MESSAGE value="Fix login/register not interacting with database correctly." />
+    <MESSAGE value="Redesign table of groups and cleanup code." />
+    <MESSAGE value="Clean up code and replace algorithms with more efficient ones." />
+    <MESSAGE value="Enchance validation checking and group adding algorithm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enchance validation checking and group adding algorithm." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="391" y="34" key="CommitChangelistDialog2" timestamp="1600121847729">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="391" y="34" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1600121847729" />
+    <state x="596" y="188" key="RollbackChangesDialog" timestamp="1600096694546">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="596" y="188" key="RollbackChangesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1600096694546" />
+    <state x="0" y="23" width="1141" height="877" key="SettingsEditor" timestamp="1607013538401">
+      <screen x="0" y="23" width="1382" height="877" />
+    </state>
+    <state x="0" y="23" width="1141" height="877" key="SettingsEditor/0.23.1382.877@0.23.1382.877" timestamp="1607013538401" />
+    <state x="452" y="223" key="Vcs.Push.Dialog.v2" timestamp="1600120078478">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="452" y="223" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1600120078478" />
+    <state x="92" y="122" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600122069589">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="92" y="122" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1600122069589" />
+    <state x="170" y="3" width="1297" height="1031" maximized="true" key="dock-window-1" timestamp="1600105734305">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="170" y="3" width="1297" height="1031" maximized="true" key="dock-window-1/0.30.1920.1050@0.30.1920.1050" timestamp="1600105734305" />
+    <state x="953" y="30" width="974" height="1057" maximized="true" key="dock-window-2" timestamp="1600114316002">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="953" y="30" width="974" height="1057" maximized="true" key="dock-window-2/0.30.1920.1050@0.30.1920.1050" timestamp="1600114316002" />
+    <state x="483" y="388" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607324778397">
+      <screen x="0" y="23" width="1382" height="877" />
+    </state>
+    <state x="483" y="388" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1382.877@0.23.1382.877" timestamp="1607324778397" />
+    <state x="388" y="36" width="670" height="864" key="search.everywhere.popup" timestamp="1606843797199">
+      <screen x="0" y="23" width="1382" height="877" />
+    </state>
+    <state x="388" y="36" width="670" height="864" key="search.everywhere.popup/0.23.1382.877@0.23.1382.877" timestamp="1606843797199" />
+    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1600120413987" />
+  </component>
+</project>

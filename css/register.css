@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: times new roman;
+    background: #C0C0C0;
+
+}
+
+#title{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%
+}
+
+#memo{
+    font-size: 20px;
+    text-align: center;
+}
+.signupBox{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 45%;
+    bottom:10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+::placeholder{
+    color: black;
+    opacity: 80%
+}
+
+#companyNameId, #passwordId, #usernameId, #confirmPasswordId, #phoneNumberId{
+    background: none;
+    border:0;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #2980b9;
+    padding: 14px 10px;
+    width: 70%;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+    transition: 0.25s;
+}
+
+#usernameId:focus, #passwordId:focus, #fullNameId:focus, #confirmPasswordId:focus , #phoneNumberId:focus{
+    width: 75%;
+}
+
+#signUpButton, #cancelButton{
+    margin: 15px;
+    background: none;
+    border: 2px solid #2980b9;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: black;
+    transition: 0.25s;
+}
+
+#signUpButton:hover, #cancelButton:hover{
+    background: #2980b9;
+}
