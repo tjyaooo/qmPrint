@@ -81,3 +81,7 @@ body{
 .mdl-data-table td{
     text-align: center;
 }
+
+.mdl-textfield__input {
+    text-align: center;
+}
