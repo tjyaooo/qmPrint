@@ -14,12 +14,12 @@
 <h1 id="title"> QM Print Sdn. Bhd.</h1>
 <h1 id="description">Printing Made Easy.</h1>
 <div class="loginArea">
-    <i class="fa fa-lock" aria-hidden="true" style="font-size:60px;"></i>
-    <h2>User Login</h2>
+    <i id="lockIcon" class="fa fa-lock" aria-hidden="true" style="font-size:6em;"></i>
+    <h2 id="userLoginText">User Login</h2>
 
 
-    <input id="usernameId" placeholder="username" type="text"></input>
-    <input id="passwordId" placeholder="password" type="password"></input>
+    <input id="usernameId" placeholder="Username" type="text"></input>
+    <input id="passwordId" placeholder="Password" type="password"></input>
     <div>
         <button id="loginButton" onclick="login();">Login</button>
 
@@ -29,6 +29,7 @@
 
     </div>
     <div id="error" style="color: red"></div>
+
 </div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -44,5 +45,4 @@
 <script src="scripts/index.js"></script>
 
 </body>
-
 </html>

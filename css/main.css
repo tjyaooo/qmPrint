@@ -1,73 +1,89 @@
-body{
-    margin:0;
-    padding:0;
+
+html,body{
     font-family: Times New Roman;
     background: #C0C0C0;
+    display: table;
+    height: 100%;
+    padding: auto;
+    margin: auto;
 
+}
+
+body{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #title{
     text-align: center;
-    font-size: 3em;
-    margin-top: 5%
+    font-size: 3.7em;
+    margin-top: 0;
 }
 
 #description{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.7em;
+}
+
+#lockIcon{
+    margin-bottom: 0.5em;
+}
+
+#userLoginText{
+    font-size: 2.5em;
+    margin: auto;
 }
 
 .loginArea{
-    width: 400px;
-    padding: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 29em;
+    position: relative;
     text-align: center;
+    margin:auto;
 }
 
 
 #usernameId, #passwordId {
     background: none;
-    border:0;
-    margin: 10px auto;
+    margin: 0.7em auto;
     text-align: center;
-    border: 2px solid #2980b9;
-    padding: 14px 10px;
-    width: 70%;
-    outline: none;
-    border-radius: 20px;
+    border: 0.25em solid #2980b9;
+    padding: 0.7em 0;
+    width: 90%;
+    border-radius: 5em;
+    font-size: 1.3em;
     color: black;
-    transition: 0.25s;
+    transition: 0.5s;
+
+
 }
 
 #usernameId:focus, #passwordId:focus{
-    width: 75%;
+    outline:none;
+    border-radius: 5em;
+    border: 0.25em solid black;
 }
+
 
 ::placeholder{
     color: black;
-    opacity: 80%
+    opacity: 80%;
+    font-size: 1.6em;
 }
 
 #loginButton, #registerButton{
-    margin: 15px;
+    margin: 1em;
     background: none;
-    border: 2px solid #2980b9;
-    border-radius: 20px;
+    border: 0.25em solid green;
+    border-radius: 3em;
     outline: none;
-    padding: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
     color: black;
-    transition: 0.25s;
+    font-size: 1em;
 }
 
 #loginButton:hover, #registerButton:hover{
     background: #E0FFFF;
 }
-
-
-
 

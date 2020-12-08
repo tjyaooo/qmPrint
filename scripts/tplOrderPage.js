@@ -113,7 +113,7 @@ function sendOrder(){
     let file = fileButton.files[0];
     let user = JSON.parse(localStorage.getItem(USER_KEY)).username;
     let date = (new Date()).toISOString().split('T')[0];
-    var storageRef = firebase.storage().ref(user + "(" + date + + ")" + '/' + file.name);
+    var storageRef = firebase.storage().ref(user + " (" + date + ")" + '/' + file.name);
     storageRef.put(file);
 
     addOrder(thickness, quan, width, height);

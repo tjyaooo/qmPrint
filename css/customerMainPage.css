@@ -10,13 +10,12 @@ body{
 
 #userDisplay {
     color: white;
-    font-size: 18px;
     display: inline;
 }
 
 #userD {
     color: white;
-    font-size: 18px;
+    font-size: 2em;
     display: inline;
 }
 
