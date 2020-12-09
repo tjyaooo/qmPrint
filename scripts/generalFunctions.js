@@ -13,19 +13,15 @@
 /* Use this to get the logged in user's user object
  from localstorage.
  */
-const USER_KEY = "groupflow-user";
+const USER_KEY = "QM-user";
 
-const GROUP_KEY = "groupflow-group-selection";
-
-const CONTRIBUTION_KEY = "groupflow-contribution";
 
 /* Use this to retrieve filenames of pages
  accessible by a certain usertype.
  */
 const ACCESSIBLE_PAGES = {
-    "student": ["studentmain.html"],
-    "lecturer": ["lecmainpage.html", "creategroup.html", "groupDetails.html"],
-    "admin": ["itsupportmain.html"]
+    "customer": ["customerMainPage.html"],
+    "designer": ["designerMainPage.html"]
 }
 
 /* Yep, no more declaring it on your own.
@@ -66,7 +62,6 @@ function inner(id) {
 function logOut() {
     // Reset user details
     localStorage.setItem(USER_KEY, JSON.stringify(""));
-    localStorage.setItem(GROUP_KEY, JSON.stringify(""));
 
     // Redirect user back to login page.
     window.location = "index.html";
@@ -96,7 +91,19 @@ function verifyPermission() {
     if (user == "")
     {
         // Should be denied access
-        document.getElementsByTagName("body")[0].innerText = "Access denied";
+        document.getElementsByTagName("body")[0].innerText = "Access Denied";
+    }
+
+    else
+    {
+        var url = window.location.pathname;
+        var permissionsLst = "/" + ACCESSIBLE_PAGES[user.permission];
+        if (!permissionsLst.includes(url)){
+            // Should be denied access
+            document
+                .getElementsByTagName("body")[0]
+                .innerText = "Access Denied";
+        }
     }
 }
 /**
@@ -163,26 +170,7 @@ function assignStudent(studentName, groupName) {
         });
 }
 
-/**
- * Store the chosen group in local storage to bring to
- * the next page > groupDetails.html
- * @param buttonID - The ID of the 'Open' button, also
- * the name of the user's selected group.
- *
- */
-function setGroup(buttonID) {
-    //checking if browser supports localStorage
-    //and overwrite existing localstorage
-    if (typeof(Storage) === "undefined") {
-        document.getElementById("result").innerHTML =
-            "Sorry, your browser does not support Web Storage...";
-    } else {
-        // Store as soon as storage supported, dont care if it existed before
-        localStorage.setItem(GROUP_KEY, JSON.stringify(buttonID));
-    }
-    //Once stored, redirect to details page
-    window.location.href = "groupDetails.html";
-}
+
 
 /**
  * Gets the user object of the currently
