@@ -4,7 +4,7 @@ html,body{
     background: #C0C0C0;
     display: table;
     height: 100%;
-    padding: auto;
+    width: 100%;
     margin: auto;
 
 }
@@ -12,6 +12,7 @@ html,body{
 body{
     display: table-cell;
     vertical-align: middle;
+    padding: 0 0;
 }
 
 #title{
@@ -32,6 +33,7 @@ body{
 #userLoginText{
     font-size: 2.5em;
     margin: auto;
+    margin-bottom: 1.1em;
 }
 
 .loginArea{

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="clean up UI for index">
+    <list default="true" id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="update permissions of customers">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting..cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting..cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/customerMainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/customerMainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/generalFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generalFunctions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607446389303</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update permissions of customers">
+      <created>1607511165777</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607511165777</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +211,8 @@
     <MESSAGE value="UI cleaning" />
     <MESSAGE value="customer main page UI adjustments" />
     <MESSAGE value="clean up UI for index" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up UI for index" />
+    <MESSAGE value="update permissions of customers" />
+    <option name="LAST_COMMIT_MESSAGE" value="update permissions of customers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="34" key="CommitChangelistDialog2" timestamp="1600121847729">
@@ -219,10 +227,10 @@
       <screen x="0" y="23" width="1382" height="877" />
     </state>
     <state x="0" y="23" width="1141" height="877" key="SettingsEditor/0.23.1382.877@0.23.1382.877" timestamp="1607013538401" />
-    <state x="325" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607446392423">
+    <state x="325" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607511169706">
       <screen x="0" y="23" width="1382" height="877" />
     </state>
-    <state x="325" y="184" key="Vcs.Push.Dialog.v2/0.23.1382.877@0.23.1382.877" timestamp="1607446392423" />
+    <state x="325" y="184" key="Vcs.Push.Dialog.v2/0.23.1382.877@0.23.1382.877" timestamp="1607511169706" />
     <state x="452" y="223" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1600120078478" />
     <state x="92" y="122" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600122069589">
       <screen x="0" y="30" width="1920" height="1050" />

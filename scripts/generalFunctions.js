@@ -20,8 +20,8 @@ const USER_KEY = "QM-user";
  accessible by a certain usertype.
  */
 const ACCESSIBLE_PAGES = {
-    "customer": ["customerMainPage.html"],
-    "designer": ["designerMainPage.html"]
+    "customer": ["/customerMainPage.html", "/tplOrderPage.html"],
+    "designer": ["/designerMainPage.html"]
 }
 
 /* Yep, no more declaring it on your own.
@@ -97,7 +97,7 @@ function verifyPermission() {
     else
     {
         var url = window.location.pathname;
-        var permissionsLst = "/" + ACCESSIBLE_PAGES[user.permission];
+        var permissionsLst = ACCESSIBLE_PAGES[user.permission];
         if (!permissionsLst.includes(url)){
             // Should be denied access
             document
