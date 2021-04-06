@@ -3,12 +3,33 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:designer" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="update permissions of customers">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting..cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting..cache" afterDir="false" />
+    <list default="true" id="b294c7e2-490a-4959-b210-980c49591ea2" name="Default Changelist" comment="added designerMainPage.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generalFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generalFunctions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +59,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="jdk.selected.JAVA_MODULE" value="12" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\sample" />
+      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\sample" />
-      <recent name="C:\Users\username\WebstormProjects\project\Sprint 1\prototype\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -195,6 +220,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="designer" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add spike code for testing database." />
     <MESSAGE value="Add docs to spike code." />
@@ -223,10 +272,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="596" y="188" key="RollbackChangesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1600096694546" />
-    <state x="0" y="23" width="1141" height="877" key="SettingsEditor" timestamp="1607013538401">
+    <state x="0" y="23" width="1141" height="877" key="SettingsEditor" timestamp="1608042708128">
       <screen x="0" y="23" width="1382" height="877" />
     </state>
-    <state x="0" y="23" width="1141" height="877" key="SettingsEditor/0.23.1382.877@0.23.1382.877" timestamp="1607013538401" />
+    <state x="0" y="23" width="1141" height="877" key="SettingsEditor/0.23.1382.877@0.23.1382.877" timestamp="1608042708128" />
     <state x="325" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607511169706">
       <screen x="0" y="23" width="1382" height="877" />
     </state>
@@ -248,6 +297,10 @@
       <screen x="0" y="23" width="1382" height="877" />
     </state>
     <state x="483" y="388" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1382.877@0.23.1382.877" timestamp="1607324778397" />
+    <state x="0" y="23" key="new project wizard" timestamp="1608042579529">
+      <screen x="0" y="23" width="1382" height="877" />
+    </state>
+    <state x="0" y="23" key="new project wizard/0.23.1382.877@0.23.1382.877" timestamp="1608042579529" />
     <state x="388" y="36" width="670" height="864" key="search.everywhere.popup" timestamp="1606843797199">
       <screen x="0" y="23" width="1382" height="877" />
     </state>
